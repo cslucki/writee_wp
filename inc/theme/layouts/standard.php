@@ -2,6 +2,7 @@
 /**************************************/
 ## Standard blog layout
 # modifié le 25/06/2019 à 12h30
+# Modif Cyril - 20 articles par page
 /**************************************/
 
 ?>
@@ -10,7 +11,8 @@
 	<?php 
 		$args = array(
 			'orderby' => 'date',
-			'order'   => 'ASC'
+			'order'   => 'ASC',
+			'posts_per_page' => 20, // Modifier ici pour afficher 20 articles par page
 		);
 
 		$query = new WP_Query($args);

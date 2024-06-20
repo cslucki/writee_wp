@@ -1,6 +1,7 @@
 <?php 
 /****************************************/
 ## Blog post header content.
+## Modif Cyril - on affiche pas la catégorie + format de date
 /***************************************/
 
 global $post;
