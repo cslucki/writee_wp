@@ -1,4 +1,10 @@
 <?php 
+
+/****************************************/
+## Related posts section
+## Modif Cyril - on supprime la section "A DECOUVRIR EGALEMENT"
+/***************************************/
+/*
 global $post;
 $categories = get_the_category($post->ID);
 $related_no = 3;
@@ -36,4 +42,5 @@ if ($categories):
 endif; //if ($categories)
   wp_reset_query();  // Restore global post data stomped by the_post().
   
+  */
  ?>

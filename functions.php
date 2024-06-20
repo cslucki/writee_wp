@@ -22,6 +22,16 @@ if ( version_compare( $GLOBALS['wp_version'], '4.5', '<' ) ) {
 	return;
 }
 
+## Modif Cyril - 100 articles par page voir archive.php et inc\theme\layouts\standard.php
+
+// Désactiver la pagination
+if ( ! function_exists ( 'writee_pagenavi' ) ) {
+    function writee_pagenavi(){
+        // Ne rien faire
+    }
+}
+
+
 require_once(WRT_INC_DIR.'/functions/tgm-activation.php');
 require_once(WRT_INC_DIR.'/functions/customizer.php');
 require_once(WRT_INC_DIR.'/functions/theme-functions.php');
