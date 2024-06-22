@@ -60,7 +60,8 @@
 			<hr>
 			<div  style="font-size: smaller; margin-top: 10px;">
 
-			<a href=http://www.gnu.org/licenses/gpl.html>GNU General Public License v3.0</a>
+			<a href=http://www.gnu.org/licenses/gpl.html>GNU General Public License v3.0</a> - 
+			<a href=https://github.com/cslucki/writee_wp>Git</a>
 			</div>
 
 			
