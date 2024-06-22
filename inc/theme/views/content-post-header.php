@@ -31,6 +31,10 @@ $date_format = 'd/m';
 	   ?>
 		<div class="entry-meta" style="text-align: left;">
 			
-			<span class="entry-date"><?php the_time($date_format); ?></span>
+			<span class="entry-date">
+				<?php 
+				the_time($date_format); 
+				?>
+				</span>
 		</div>
 	</div>

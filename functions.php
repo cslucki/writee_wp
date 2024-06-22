@@ -22,6 +22,11 @@ if ( version_compare( $GLOBALS['wp_version'], '4.5', '<' ) ) {
 	return;
 }
 
+/*********************************************************/
+## Personnalisation fpres.org
+/**********************************************************/
+
+
 ## Modif Cyril - 100 articles par page voir archive.php et inc\theme\layouts\standard.php
 
 // Désactiver la pagination
@@ -30,6 +35,19 @@ if ( ! function_exists ( 'writee_pagenavi' ) ) {
         // Ne rien faire
     }
 }
+
+
+function wp_auto_link_images($html, $id, $caption, $title, $align, $url, $size, $alt) {
+    $image_src = wp_get_attachment_image_src($id, $size);
+    $html = '<a href="' . $image_src[0] . '" target="_blank">' . $html . '</a>';
+    return $html;
+}
+add_filter('image_send_to_editor', 'wp_auto_link_images', 10, 8);
+
+/*********************************************************/
+## Fin personnalisation
+/**********************************************************/
+
 
 
 require_once(WRT_INC_DIR.'/functions/tgm-activation.php');
